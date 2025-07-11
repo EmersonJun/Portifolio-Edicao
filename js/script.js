@@ -226,3 +226,25 @@ revealSections.forEach(section => {
     section.style.transition = 'all 0.6s ease';
     revealObserver.observe(section);
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const videoPreview = document.getElementById("video-preview");
+
+    videoPreview.addEventListener("click", () => {
+        videoPreview.innerHTML = `
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/HXW4KZBLLIk?autoplay=1&rel=0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        `;
+    });
+});
