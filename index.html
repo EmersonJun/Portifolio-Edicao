@@ -90,78 +90,67 @@
     </section>
 
     <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">My Portfolio</h2>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="corporate">Corporate</button>
-                <button class="filter-btn" data-filter="social">Social Media</button>
-                <button class="filter-btn" data-filter="event">Events</button>
+    <div class="container">
+        <h2 class="section-title">My Portfolio</h2>
+
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="corporate">Corporate</button>
+            <button class="filter-btn" data-filter="social">Social Media</button>
+            <button class="filter-btn" data-filter="event">Events</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="corporate">
+                <div class="portfolio-image">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Corporate Video">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Video</h3>
+                        <p>Institutional presentation</p>
+                        <button class="play-btn" data-video="https://www.youtube.com/embed/VIDEO_ID1">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="corporate">
-                    <div class="portfolio-image">
-                        <img src="/placeholder.svg?height=300&width=400" alt="Corporate Video">
-                        <div class="portfolio-overlay">
-                            <h3>Corporate Video</h3>
-                            <p>Institutional presentation</p>
-                            <button class="play-btn"><i class="fas fa-play"></i></button>
-                        </div>
+
+            <div class="portfolio-item" data-category="social">
+                <div class="portfolio-image">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Social Media Content">
+                    <div class="portfolio-overlay">
+                        <h3>Social Media</h3>
+                        <p>Instagram content</p>
+                        <button class="play-btn" data-video="https://www.youtube.com/embed/VIDEO_ID2">
+                            <i class="fas fa-play"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="social">
-                    <div class="portfolio-image">
-                        <img src="/placeholder.svg?height=300&width=400" alt="Social Media Content">
-                        <div class="portfolio-overlay">
-                            <h3>Social Media</h3>
-                            <p>Instagram content</p>
-                            <button class="play-btn"><i class="fas fa-play"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="event">
-                    <div class="portfolio-image">
-                        <img src="/placeholder.svg?height=300&width=400" alt="Event Coverage">
-                        <div class="portfolio-overlay">
-                            <h3>Events</h3>
-                            <p>Wedding in Curitiba</p>
-                            <button class="play-btn"><i class="fas fa-play"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="corporate">
-                    <div class="portfolio-image">
-                        <img src="/placeholder.svg?height=300&width=400" alt="Corporate Training">
-                        <div class="portfolio-overlay">
-                            <h3>Training</h3>
-                            <p>Educational video</p>
-                            <button class="play-btn"><i class="fas fa-play"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="social">
-                    <div class="portfolio-image">
-                        <img src="/placeholder.svg?height=300&width=400" alt="YouTube Content">
-                        <div class="portfolio-overlay">
-                            <h3>YouTube</h3>
-                            <p>Channel content</p>
-                            <button class="play-btn"><i class="fas fa-play"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="event">
-                    <div class="portfolio-image">
-                        <img src="/placeholder.svg?height=300&width=400" alt="Corporate Event">
-                        <div class="portfolio-overlay">
-                            <h3>Corporate</h3>
-                            <p>Product launch</p>
-                            <button class="play-btn"><i class="fas fa-play"></i></button>
-                        </div>
+            </div>
+
+            <div class="portfolio-item" data-category="event">
+                <div class="portfolio-image">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Event Coverage">
+                    <div class="portfolio-overlay">
+                        <h3>Events</h3>
+                        <p>Wedding in Curitiba</p>
+                        <button class="play-btn" data-video="https://www.youtube.com/embed/VIDEO_ID3">
+                            <i class="fas fa-play"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Modal de vídeo -->
+<div id="videoModal" class="video-modal">
+    <div class="video-content">
+        <span class="close">&times;</span>
+        <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
 
     <section id="skills" class="skills">
         <div class="container">
