@@ -248,29 +248,44 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("videoModal");
-    const videoFrame = document.getElementById("videoFrame");
-    const closeBtn = document.querySelector(".video-modal .close");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const modal = document.getElementById("videoModal");
+//     const videoFrame = document.getElementById("videoFrame");
+//     const closeBtn = document.querySelector(".video-modal .close");
 
-    document.querySelectorAll(".play-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-            const videoUrl = btn.getAttribute("data-video");
-            videoFrame.src = videoUrl + "?autoplay=1";
-            modal.style.display = "block";
-        });
-    });
+//     document.querySelectorAll(".play-btn").forEach(btn => {
+//         btn.addEventListener("click", () => {
+//             const videoUrl = btn.getAttribute("data-video");
+//             videoFrame.src = videoUrl + "?autoplay=1";
+//             modal.style.display = "block";
+//         });
+//     });
 
-    closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-        videoFrame.src = "";
-    });
+//     closeBtn.addEventListener("click", () => {
+//         modal.style.display = "none";
+//         videoFrame.src = "";
+//     });
 
-    window.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.style.display = "none";
-            videoFrame.src = "";
-        }
-    });
-});
+//     window.addEventListener("click", (e) => {
+//         if (e.target === modal) {
+//             modal.style.display = "none";
+//             videoFrame.src = "";
+//         }
+//     });
+// });
+// document.querySelectorAll('.portfolio-image').forEach(item => {
+//     item.addEventListener('click', function (e) {
+//         e.preventDefault();
+
+//         const playBtn = this.querySelector('.play-btn');
+//         if (!playBtn) return;
+
+//         const videoUrl = playBtn.getAttribute('data-video');
+//         const videoFrame = document.getElementById('videoFrame');
+        
+//         videoFrame.src = videoUrl + "?autoplay=1&rel=0";
+//         document.getElementById('videoModal').style.display = 'block';
+//     });
+// });
+
 
